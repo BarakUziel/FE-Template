@@ -1,0 +1,14 @@
+<div class="sign-up-page">
+
+  <h3 class="title">Fill in the detail and sign up</h3>
+
+  <form [formGroup]="signUpForm"  class="form">
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Your email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="password" placeholder="Password" type="password">
+    </mat-form-field>
+    <button class="button" (click)="signUpClicked()">Sign up</button>
+  </form>
+</div>

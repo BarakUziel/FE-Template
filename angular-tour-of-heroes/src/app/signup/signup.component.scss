@@ -1,0 +1,29 @@
+.sign-up-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 50%;
+    margin: auto;
+
+}
+
+.button {
+    width: 100%;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
