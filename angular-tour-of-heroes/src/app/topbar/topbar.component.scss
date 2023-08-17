@@ -1,0 +1,40 @@
+mat-toolbar {
+    background: #e0fdff;
+    border-bottom: #000000 solid 1px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+@keyframes slide-in {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.app-navigation {
+    margin-right: 1rem;
+    animation: slide-in 1s ease-in-out;
+}
+  
+.title {
+    animation: slide-in 1s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    padding-top: 5px;
+    width: 50px;
+    height: 40px;
+}
