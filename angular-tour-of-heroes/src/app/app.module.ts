@@ -15,8 +15,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HomepageComponent } from './homepage/homepage.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselModule } from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -24,9 +22,7 @@ import { CarouselModule } from '@coreui/angular';
     TopbarComponent,
     NavigationComponent,
     SignupComponent,
-    HomepageComponent,
-    CarouselComponent,
-    CarouselModule
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
