@@ -1,4 +1,27 @@
 
+  $brand-50: #fffbeb;
+  $brand-100: #fff4c7;
+  $brand-200: #ffed9f;
+  $brand-300: #ffe676;
+  $brand-400: #ffe157;
+  $brand-500: #ffdb3a;
+  $brand-600: #ffcb39;
+  $brand-700: #fbb334;
+  $brand-800: #f79b30;
+  $brand-900: #f17327;
+
+  $secondary-50: #ebefff;
+  $secondary-100: #cdd6fa;
+  $secondary-200: #aebdf4;
+  $secondary-300: #8da1ed;
+  $secondary-400: #728ae7;
+  $secondary-500: #5973e1;
+  $secondary-600: #526ad5;
+  $secondary-700: #495ec8;
+  $secondary-800: #4154bc;
+  $secondary-900: #3541a6;
+
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -36,26 +59,14 @@ $my-partner-is-a-doctor-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body {
-  background: linear-gradient(to bottom, #5adfe970, #ffffff);
+body { 
+  margin: 0; 
+  font-family: "Signika Negative", sans-serif;
+  background: linear-gradient(to bottom, $brand-100, #FFFFFF);
 }
 
-.title {
-  font-family:SpaceGrotesk-Light;
-  color:#202020;
-  line-height: 1.2;
-  font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.sub-title {
-  font-family:SpaceGrotesk-Medium;
-  max-width: 520px;
-  text-transform: uppercase;
-  color:#fff;
-  font-size: 16px;
+.brand-background {
+  background: $brand-100;
 }
 
 .button {
@@ -70,11 +81,10 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1em;
   margin: 0;
   opacity: 1;
   outline: 0;
-  padding: 1.5em 2.2em;
+  padding: 0.5rem;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -93,7 +103,7 @@ body {
 .button:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color: $brand-200;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -119,4 +129,21 @@ body {
 .button span {
   z-index: 1;
   position: relative;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+.text {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+
+.title {
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.04em;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 400;
 }
